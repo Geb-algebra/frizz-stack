@@ -7,6 +7,9 @@
 		"check:write": "biome check --write",
 		"check:write-unsafe": "biome check --write --unsafe",
 		"typecheck": "react-router typegen && tsc",
+		"test:unit": "vitest",
+		"test:unit:ui": "vitest --ui",
+		"test:unit:run": "vitest run",
 		"validate": "npm run check && npm run typecheck",
 		"build": "NODE_OPTIONS=\"--conditions workerd\" react-router build",
 		"dev": "react-router dev",
@@ -37,6 +40,9 @@
 		"@types/node": "^22",
 		"@types/react": "^19.0.10",
 		"@types/react-dom": "^19.0.4",
+		"@vitejs/plugin-react": "^4.3.4",
+		"@vitest/ui": "3.0.8",
+		"happy-dom": "^17.4.0",
 		"miniflare": "^3.20250224.0",
 		"react-router-devtools": "^1.1.6",
 		"remix-flat-routes": "^0.8.5",
@@ -44,6 +50,7 @@
 		"typescript": "^5.8.2",
 		"vite": "^6.2.1",
 		"vite-tsconfig-paths": "^5.1.4",
+		"vitest": "^3.0.8",
 		"wrangler": "^3.114.0"
 	}
 }
