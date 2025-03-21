@@ -10,7 +10,7 @@
 		"test:unit": "vitest",
 		"test:unit:ui": "vitest --ui",
 		"test:unit:run": "vitest run",
-		"validate": "npm run check && npm run typecheck",
+		"validate": "npm run check && npm run typecheck && npm run test:unit",
 		"build": "NODE_OPTIONS=\"--conditions workerd\" react-router build",
 		"dev": "react-router dev",
 		"start": "wrangler dev",
