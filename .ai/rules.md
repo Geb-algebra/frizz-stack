@@ -244,6 +244,8 @@ export default function Home({ loaderData, actionData }: Route.ComponentProps) {
 
 Keep in mind that `loader` and `action` runs in server while other Route Modules (`meta, clientLoader, clientAction` etc and the default export component) runs in client. You can't include client-only codes (`window`, `localStorage` etc) in `loader` and `action` and can't include server-only codes (interacting with DB etc) in other Route Modules.
 
+Also keep in mind that you should not seek any files from `+types` directory. The directory does not exist. it is an alias directory defined by react-router. 
+
 ## ADR
 
 You must record your plannings on an ADR in `./decisions`. ADRs should mainly contain key decisions and why the decisions are made, not how.
